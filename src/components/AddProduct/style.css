@@ -1,0 +1,75 @@
+.add-product {
+    margin-top: 20px;
+    /* padding: 10px 20px; */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 350px;
+    column-gap: 30px;
+}
+.add-product form .james-title {
+    margin-bottom: 20px;
+}
+.add-product form {
+    overflow-y: auto;
+    background-color: white;
+    grid-column: 1 / 9;
+    /* border-radius: 20px; */
+    padding: 10px 20px;
+    /* border: 2px solid red; */
+    scrollbar-color: red;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.add-product form > div {
+    margin-bottom: 10px;
+}
+.add-product form select {
+    width: 80%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid grey;
+    padding: 6px 5px;
+}
+.add-product form select option:first-child {
+    font-weight: 300;
+    opacity: 0.3;
+}
+.add-product form input:not([type='file']) {
+    border: none;
+    border: 2px solid rgb(15, 5, 59);
+    padding: 8px 7px;
+    width: 80%;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    color: gray;
+    border-radius: 8px;
+}
+.add-product form input:focus {
+    outline: none;
+}
+.add-product form label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.add-product form input::placeholder {
+    font-weight: 300;
+    opacity: 0.3;
+}
+.add-product form button {
+    background-color: green;
+    width: 50%;
+    color: white;
+    border: 0;
+    height: 35px;
+
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+.add-product .submit-status {
+    overflow-y: auto;
+    grid-column: 9 / -1;
+    background-color: white;
+    /* border-radius: 20px; */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
